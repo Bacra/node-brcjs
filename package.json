@@ -18,9 +18,8 @@
     "url": "git@github.com:Bacra/node-brcjs.git"
   },
   "keywords": [
-    "i18n",
-    "plugin",
-    "ast"
+    "config",
+    "eslint"
   ],
   "author": "Bacra Woo<bacra.woo@gmail.com>",
   "license": "MIT",
