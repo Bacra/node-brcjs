@@ -1,6 +1,6 @@
 {
   "name": "brcjs",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "eslint config",
   "main": "conf/eslint.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "debug": "^3.1.0"
+    "debug": "^3.1.0",
+    "extend": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^5.0.0"

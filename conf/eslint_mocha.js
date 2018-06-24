@@ -1,6 +1,5 @@
 module.exports =
 {
-	extends: './eslint.js',
 	globals:
 	{
 		describe	: true,
