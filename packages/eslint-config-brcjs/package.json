@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-brcjs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "eslint config",
   "main": "index.js",
   "dependencies": {
-    "brcjs": "^0.0.1"
+    "brcjs": "^0.0.3"
   },
   "repository": {
     "type": "git",
