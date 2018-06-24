@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-brcjs",
+  "version": "0.0.1",
+  "description": "eslint config",
+  "main": "index.js",
+  "dependencies": {
+    "brcjs": "^0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Bacra/node-brcjs.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "brcjs"
+  ],
+  "author": "Bacra Woo<bacra.woo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bacra/node-brcjs/issues"
+  },
+  "homepage": "https://github.com/Bacra/node-brcjs"
+}
