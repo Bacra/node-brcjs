@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brcjs",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "eslint config",
   "main": ".eslintrc.js",
   "repository": {
