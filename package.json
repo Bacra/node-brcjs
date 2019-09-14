@@ -1,27 +1,13 @@
 {
-  "name": "eslint-config-brcjs",
-  "version": "0.2.0",
-  "description": "eslint config",
-  "main": "index.js",
+  "name": "root",
+  "private": true,
   "scripts": {
-    "prepublish": "npm ls",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "bootstrap": "lerna bootstrap",
+    "ls": "lerna ls"
   },
   "devDependencies": {
+    "lerna": "^3.16.4",
     "eslint": "^5.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Bacra/node-eslint-config-brcjs.git"
-  },
-  "keywords": [
-    "config",
-    "eslint"
-  ],
-  "author": "Bacra Woo<bacra.woo@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Bacra/node-eslint-config-brcjs/issues"
-  },
-  "homepage": "https://github.com/Bacra/node-eslint-config-brcjs"
+  }
 }

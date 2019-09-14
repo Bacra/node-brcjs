@@ -1,10 +1,3 @@
-module.exports =
-{
-	env: {node: true},
-	extends: 'eslint:recommended',
-	rules:
-	{
-		'no-console': 'off',
-		'no-redeclare': 'off',
-	},
+module.exports = {
+	extends: [ require.resolve('./packages/eslint-config-brcjs') ]
 };
