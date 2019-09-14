@@ -1,0 +1,50 @@
+{
+  "name": "karma-config-brcjs",
+  "version": "2.0.0",
+  "description": "Karma Config",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env DEBUG=karma-config-brcjs* mocha test/test_*",
+    "test-e2e": "karma start --",
+    "test-e2e-dev": "cross-env DEBUG=karma-config-brcjs* karma start --auto-watch --no-single-run --browsers=Chrome",
+    "test-e2e-sauce": "karma start -- sauce"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "core-js": "^2.6.5",
+    "debug": "^4.1.1",
+    "karma-browserify": "^6.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^2.0.2",
+    "mocha": "^6.0.2",
+    "lodash": "^4.17.11",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "expect.js": "^0.3.1",
+    "karma": "^4.0.1"
+  },
+  "peerDependencies": {
+    "karma": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Bacra/node-brcjs.git"
+  },
+  "keywords": [
+    "karma",
+    "config"
+  ],
+  "author": "Bacra Woo<bacra.woo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bacra/node-brcjs/issues"
+  },
+  "homepage": "https://github.com/Bacra/node-brcjs"
+}

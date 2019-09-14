@@ -4,7 +4,11 @@
   "scripts": {
     "lint": "eslint .",
     "bootstrap": "lerna bootstrap",
-    "ls": "lerna ls"
+    "ls": "lerna ls",
+    "test": "lerna run test",
+    "test-e2e": "lerna run test-e2e",
+    "test-e2e-dev": "lerna run test-e2e-dev",
+    "test-e2e-sauce": "lerna run test-e2e-sauce"
   },
   "devDependencies": {
     "lerna": "^3.16.4",
