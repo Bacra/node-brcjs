@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "eslint config",
   "main": ".eslintrc.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "eslint test/lint_*.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Bacra/node-brcjs.git"
@@ -16,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/Bacra/node-brcjs/issues"
   },
-  "homepage": "https://github.com/Bacra/node-brcjs"
+  "peerDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0"
+  },
+  "homepage": "https://github.com/Bacra/node-brcjs",
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1"
+  }
 }
