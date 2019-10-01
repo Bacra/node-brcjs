@@ -22,10 +22,10 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0"
+    "eslint": "^6.5.1"
   },
   "homepage": "https://github.com/Bacra/node-brcjs",
-  "dependencies": {
+  "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1"
   }
