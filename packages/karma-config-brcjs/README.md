@@ -1,10 +1,8 @@
 KARMA-CONFIG-BRCJS
 ==================
 
-
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
 [![NPM License][license-image]][npm-url]
 
 
@@ -31,9 +29,7 @@ module.exports = function(config)
 }
 ```
 
-[npm-image]: http://img.shields.io/npm/v/brcjs.svg
-[downloads-image]: http://img.shields.io/npm/dm/brcjs.svg
+[npm-image]: https://img.shields.io/npm/v/brcjs.svg
+[downloads-image]: https://img.shields.io/npm/dm/brcjs.svg
 [npm-url]: https://www.npmjs.org/package/brcjs
-[travis-image]: http://img.shields.io/travis/Bacra/node-brcjs/master.svg?label=linux
-[travis-url]: https://travis-ci.org/Bacra/node-brcjs
-[license-image]: http://img.shields.io/npm/l/brcjs.svg
+[license-image]: https://img.shields.io/npm/l/brcjs.svg
