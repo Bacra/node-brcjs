@@ -17,5 +17,6 @@ addons:
 
 script:
   - npm run lint
+  - npm run bootstrap
   - npm run test
   - npm run test-e2e ChromeHeadlessNoSandbox,FirefoxHeadless
