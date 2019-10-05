@@ -25,7 +25,7 @@ module.exports = {
 		'no-redeclare': 'off',
 	},
 	overrides: [{
-		files: ['**/test/*.js'],
+		files: ['**/test/**/*.js'],
 		env: {
 			mocha: true
 		}
