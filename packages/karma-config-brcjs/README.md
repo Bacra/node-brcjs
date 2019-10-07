@@ -12,7 +12,7 @@ KARMA-CONFIG-BRCJS
 npm install karma-config-brcjs --save
 ```
 
-# Useage
+# Usage
 
 ```javascript
 var commonConfig = require('karma-config-brcjs');
