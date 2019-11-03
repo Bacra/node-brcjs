@@ -5,7 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "eslint test/lint_*.js"
+    "test": "eslint test/**/*.js"
   },
   "repository": {
     "type": "git",
