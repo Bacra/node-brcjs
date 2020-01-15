@@ -4,7 +4,7 @@ module.exports = {
 		node: true,
 		es6: true,
 	},
-	extends: 'eslint:recommended',
+	extends: ['eslint:recommended'],
 	globals: {
 		self: false,
 		global: false
@@ -22,6 +22,9 @@ module.exports = {
 	rules: {
 		'no-console': 'off',
 		'no-redeclare': 'off',
+		'no-var': 'error',
+		'max-len': ['warn', { code: 80, ignoreUrls: true }],
+		'quotes': ['error', 'single']
 	},
 	overrides: [{
 		files: ['**/test/**/*.js'],
