@@ -4,7 +4,6 @@ module.exports = {
 		node: true,
 		es6: true,
 	},
-	root: true,
 	extends: 'eslint:recommended',
 	globals: {
 		self: false,
