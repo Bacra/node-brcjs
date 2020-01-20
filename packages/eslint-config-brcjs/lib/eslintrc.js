@@ -28,7 +28,7 @@ module.exports = {
 		'no-console': 'off',
 		'no-redeclare': 'off',
 		'no-var': 'error',
-		'max-len': ['warn', { code: 80, ignoreUrls: true }],
+		// 'max-len': ['warn', { code: 80, ignoreUrls: true }],
 		'quotes': ['error', 'single']
 	},
 	overrides: [{
