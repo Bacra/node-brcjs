@@ -1,9 +1,7 @@
 'use strict';
 
-module.exports = function(config)
-{
-	var customConfig =
-	{
+module.exports = function(config) {
+	const customConfig = {
 		// pkg: require('../package.json'),
 
 		// level of logging
@@ -21,8 +19,7 @@ module.exports = function(config)
 
 
 		// list of files / patterns to load in the browser
-		files:
-		[
+		files: [
 			// 'test_*.js',
 			'test_base.js'
 		],
@@ -34,14 +31,12 @@ module.exports = function(config)
 
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-		preprocessors:
-		{
+		preprocessors: {
 			// 'test_*.js': ['browserify'],
 			'test_base.js': ['browserify'],
 		},
 
-		browserify:
-		{
+		browserify: {
 			debug: true,
 		},
 
@@ -71,22 +66,18 @@ module.exports = function(config)
 		// if true, Karma captures browsers, runs the tests and exits
 		singleRun: true,
 
-		customLaunchers:
-		{
-			ChromeHeadlessNoSandbox:
-			{
+		customLaunchers: {
+			ChromeHeadlessNoSandbox: {
 				base: 'ChromeHeadless',
 				flags: ['--no-sandbox']
 			},
-			FirefoxHeadless:
-			{
+			FirefoxHeadless: {
 				base: 'Firefox',
 				flags: ['-headless']
 			},
 		},
 
-		plugins:
-		[
+		plugins: [
 			'karma-*',
 			// 写完整路径，否则以karma安装路径为准
 			'karma-browserify',

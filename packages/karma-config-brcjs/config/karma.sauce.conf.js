@@ -1,19 +1,16 @@
 'use strict';
 
-var browsers = require('./sl_browsers.js');
-var oldieConfig = require('./karma.oldie.conf.js');
+const browsers = require('./sl_browsers.js');
+const oldieConfig = require('./karma.oldie.conf.js');
 
-module.exports = function(config, browserArr)
-{
+module.exports = function(config, browserArr) {
 	// master 也运行
-	// if (process.env.TRAVIS_BRANCH && process.env.TRAVIS_BRANCH != 'sauce-runner')
-	// {
+	// if (process.env.TRAVIS_BRANCH && process.env.TRAVIS_BRANCH != 'sauce-runner') {
 	// 	console.log('Run sauce only sauce-runner branch.');
 	// 	process.exit();
 	// }
 
-	if (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY)
-	{
+	if (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY) {
 		console.log('Make sure the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables are set.');
 		process.exit(1);
 	}
@@ -24,12 +21,11 @@ module.exports = function(config, browserArr)
 		process.exit(1);
 	}
 
-	var timeout = 300000;
-	var buildId = process.env.TRAVIS_JOB_NUMBER || process.env.SAUCE_BUILD_ID || Date.now();
-	var taskName = config.pkg.name+'_'+config.pkg.version;
+	const timeout = 300000;
+	const buildId = process.env.TRAVIS_JOB_NUMBER || process.env.SAUCE_BUILD_ID || Date.now();
+	const taskName = config.pkg.name+'_'+config.pkg.version;
 
-	var customConfig =
-	{
+	const customConfig = {
 		// port			: 4445,
 		browsers		: browserArr,
 		retryLimit		: 2,
@@ -42,8 +38,7 @@ module.exports = function(config, browserArr)
 			? ['dots', 'saucelabs'] // avoid spamming CI output
 			: ['mocha', 'saucelabs'],
 
-		sauceLabs:
-		{
+		sauceLabs: {
 			build				: taskName+'_'+buildId,
 			public				: 'public',
 			testName			: taskName,
@@ -57,8 +52,7 @@ module.exports = function(config, browserArr)
 			recordVideo			: false,
 
 			// @see https://wiki.saucelabs.com/display/DOCS/Test+Configuration+Options
-			options:
-			{
+			options: {
 				// recordScreenshots	: true,
 				// recordVideo			: true,
 				videoUploadOnPass	: false,
@@ -71,8 +65,7 @@ module.exports = function(config, browserArr)
 
 
 			// customData: {},
-			connectOptions:
-			{
+			connectOptions: {
 				// port: 5757,
 				// logfile: 'sauce_connect.log',
 				'no-ssl-bump-domains': 'all',
@@ -88,8 +81,7 @@ module.exports = function(config, browserArr)
 	};
 
 	// https://github.com/karma-runner/karma-sauce-launcher/issues/73
-	if (process.env.TRAVIS_JOB_NUMBER)
-	{
+	if (process.env.TRAVIS_JOB_NUMBER) {
 		customConfig.sauceLabs.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER;
 		customConfig.sauceLabs.startConnect = false;
 	}
@@ -97,11 +89,7 @@ module.exports = function(config, browserArr)
 	config.set(customConfig);
 
 	// 老版本ie
-	if (browserArr.some(function(name)
-		{
-			return name == 'sl_ie9' || name == 'sl_ie10';
-		}))
-	{
+	if (browserArr.some(name => name == 'sl_ie9' || name == 'sl_ie10')) {
 		oldieConfig(config);
 	}
 };

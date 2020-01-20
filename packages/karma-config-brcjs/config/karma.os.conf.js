@@ -1,11 +1,10 @@
 'use strict';
 
-var os = require('os');
+const os = require('os');
 
-module.exports = function(config)
-{
-	var browsers = ['Chrome', 'Firefox'];
-	var platform = os.platform();
+module.exports = function(config) {
+	const browsers = ['Chrome', 'Firefox'];
+	const platform = os.platform();
 
 	if (platform == 'win32')
 		browsers.push('IE');

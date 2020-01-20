@@ -5,15 +5,14 @@
 'use strict';
 
 // Karma configuration
-var debug = require('debug')('karma-config-brcjs');
-var baseConfig = require('./config/karma.base.conf.js');
-var osConfig = require('./config/karma.os.conf.js');
-var sauceConfig = require('./config/karma.sauce.conf.js');
-var browsers = require('./config/sl_browsers.js');
+const debug = require('debug')('karma-config-brcjs');
+const baseConfig = require('./config/karma.base.conf.js');
+const osConfig = require('./config/karma.os.conf.js');
+const sauceConfig = require('./config/karma.sauce.conf.js');
+const browsers = require('./config/sl_browsers.js');
 
-module.exports = function(config)
-{
-	var key = process.argv[4];
+module.exports = function(config) {
+	let key = process.argv[4];
 	baseConfig(config);
 
 	debug('karma key:%s', key);
