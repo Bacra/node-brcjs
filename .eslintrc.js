@@ -1,3 +1,3 @@
 module.exports = {
-	extends: [ require.resolve('./packages/eslint-config-brcjs') ]
+	extends: [ require.resolve('./.eslint.brcjs.js') ]
 };
